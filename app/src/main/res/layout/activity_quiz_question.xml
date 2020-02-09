@@ -49,7 +49,7 @@
                 android:layout_marginEnd="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:text="@string/firstBtn" />
+                android:text="firstBtn" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +75,7 @@
                 android:layout_marginEnd="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:text="@string/secondBtn" />
+                android:text="secondBtn" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,7 +101,7 @@
                 android:layout_marginEnd="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:text="@string/thirdBtn" />
+                android:text="thirdBtn" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,7 +126,7 @@
                 android:layout_marginEnd="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:text="@string/fourthBtn" />
+                android:text="fourthBtn" />
         </LinearLayout>
 
         <LinearLayout
