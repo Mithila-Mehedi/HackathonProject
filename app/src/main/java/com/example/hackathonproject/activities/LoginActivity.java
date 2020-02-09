@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,12 +13,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hackathonproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LogInActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText signInEmail,signInPassword;
     private ProgressBar progressBar;
@@ -27,11 +28,11 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(LogInActivity.this,MainActivity.class));
+            startActivity(new Intent(LoginActivity.this,MainActivity.class));
             finish();
         }
 
@@ -98,7 +99,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()){
-                    Intent intent=new Intent(getApplicationContext(),UserAcount.class);
+                    Intent intent=new Intent(getApplicationContext(), UserAcountActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else {

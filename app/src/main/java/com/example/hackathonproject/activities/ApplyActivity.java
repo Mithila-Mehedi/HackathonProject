@@ -1,11 +1,13 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class Apply extends AppCompatActivity {
+import com.example.hackathonproject.R;
+
+public class ApplyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

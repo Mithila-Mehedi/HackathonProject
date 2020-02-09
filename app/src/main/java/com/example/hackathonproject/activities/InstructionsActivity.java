@@ -1,7 +1,10 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hackathonproject.R;
+
 public class InstructionsActivity extends AppCompatActivity {
 
     @Override

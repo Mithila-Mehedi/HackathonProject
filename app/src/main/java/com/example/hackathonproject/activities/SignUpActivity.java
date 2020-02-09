@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hackathonproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -99,19 +100,18 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 progressBar.setVisibility(View.GONE);
 
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(SignUpActivity.this,LogInActivity.class));
+                    Toast.makeText(SignUpActivity.this,"Register is successfull", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                     finish();
-                    Toast.makeText(getApplicationContext(),"Register is successfull", Toast.LENGTH_SHORT).show();
                     // Sign in success, update UI with the signed-in user's information
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                        startActivity(new Intent(SignUpActivity.this, LogInActivity.class));
+                        Toast.makeText(SignUpActivity.this,"User is already registered!\nplease sign in", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                         finish();
-                        Toast.makeText(getApplicationContext(),"User is already registered!\nplease sign in", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(getApplicationContext(),"Error:"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
-                    // If sign in fails, display a message to the user.
                 }
             }
         });

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/front_backgnd"
     android:orientation="vertical"
-    tools:context=".MyAcount">
+    tools:context=".activities.MyAcountActivity">
 
     <Button
         android:id="@+id/license"

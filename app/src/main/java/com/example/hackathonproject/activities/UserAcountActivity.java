@@ -1,17 +1,18 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.hackathonproject.R;
 
-public class UserAcount extends AppCompatActivity {
-TextView textView;
+public class UserAcountActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_acount);
-        textView=findViewById(R.id.text1);
+        TextView textView = findViewById(R.id.text1);
     }
 }

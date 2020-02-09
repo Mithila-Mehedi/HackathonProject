@@ -6,27 +6,28 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Biometrics"></activity>
-        <activity android:name=".Apply" />
-        <activity android:name=".InstructionsActivity" />
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".QuizQuestionActivity" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".UserAcount" />
-        <activity android:name=".MyAcount" />
-        <activity android:name=".MainActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".activities.BiometricsActivity" />
+        <activity android:name=".activities.ApplyActivity" />
+        <activity android:name=".activities.InstructionsActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.QuizQuestionActivity" />
+        <activity android:name=".activities.ResultActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.UserAcountActivity" />
+        <activity android:name=".activities.MyAcountActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
     </application>

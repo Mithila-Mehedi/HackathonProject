@@ -1,10 +1,12 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Biometrics extends AppCompatActivity {
+import com.example.hackathonproject.R;
+
+public class BiometricsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.model;
 
 public class Question {
 

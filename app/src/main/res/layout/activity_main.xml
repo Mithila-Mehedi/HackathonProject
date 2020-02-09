@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/front_backgnd"
     android:weightSum="10"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
 
 
@@ -24,8 +24,7 @@
             android:textSize="34sp"
             android:textStyle="bold"
             android:textColor="@color/dark_blue"
-            android:layout_centerInParent="true"
-            />
+            android:layout_centerInParent="true" />
     </RelativeLayout>
 
     <GridLayout
@@ -36,8 +35,7 @@
         android:columnOrderPreserved="false"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="14dp"
-        >
+        android:padding="14dp">
 
         <androidx.cardview.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
@@ -69,6 +67,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"

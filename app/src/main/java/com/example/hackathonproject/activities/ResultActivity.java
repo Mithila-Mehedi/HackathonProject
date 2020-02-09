@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,20 +6,20 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ResultActivity extends AppCompatActivity {
-    TextView t1,t2,t3;
+import com.example.hackathonproject.R;
+import com.example.hackathonproject.database.SharedPref;
 
-    SharedPref sharedPref;
+public class ResultActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        t1= findViewById(R.id.textView4);
-        t2= findViewById(R.id.textView5);
-        t3= findViewById(R.id.textView6);
+        TextView t1 = findViewById(R.id.textView4);
+        TextView t2 = findViewById(R.id.textView5);
+        TextView t3 = findViewById(R.id.textView6);
 
-        sharedPref = SharedPref.getInstance(this);
+        SharedPref sharedPref = SharedPref.getInstance(this);
 
         Intent i=getIntent();
         String questions=i.getStringExtra("total");

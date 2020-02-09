@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hackathonproject.model.Question;
+import com.example.hackathonproject.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

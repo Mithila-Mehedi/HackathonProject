@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
-public class MyAcount extends AppCompatActivity implements View.OnClickListener {
+import com.example.hackathonproject.R;
+
+public class MyAcountActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button license,fitness;
 
@@ -28,11 +29,13 @@ public class MyAcount extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
 
         if (view.getId() == R.id.license) {
-            Intent intent = new Intent(MyAcount.this, SignUpActivity.class);
+            Intent intent = new Intent(MyAcountActivity.this, SignUpActivity.class);
             startActivity(intent);
+            finishAffinity();
         } else if (view.getId() == R.id.fitness) {
-            Intent intent = new Intent(MyAcount.this, SignUpActivity.class);
+            Intent intent = new Intent(MyAcountActivity.this, SignUpActivity.class);
             startActivity(intent);
-
+            finishAffinity();
+        }
     }
-}}
+}

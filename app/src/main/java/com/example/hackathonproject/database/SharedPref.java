@@ -1,4 +1,4 @@
-package com.example.hackathonproject;
+package com.example.hackathonproject.database;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -15,7 +15,7 @@ public class SharedPref {
         return pref;
     }
 
-    public SharedPref(Context context) {
+    private SharedPref(Context context) {
         sharedPreferences = context.getSharedPreferences("Pref", Context.MODE_PRIVATE);
     }
 
