@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     android:orientation="vertical"
     android:background="@color/light_blue"
     tools:context=".Apply">
@@ -338,61 +337,14 @@
             android:hint="Enter spouse name"
             />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:id="@+id/Occupation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Occupation:"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            />
-        <EditText
-            android:id="@+id/editOccupation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginBottom="5dp"
-            android:hint="Enter occupation"
-            android:inputType="text"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:id="@+id/blood"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Blood Group:"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            />
-        <EditText
-            android:id="@+id/editBlood"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginBottom="5dp"
-            android:hint="Enter your blood group"
-            android:inputType="textCapCharacters"
-            />
-    </LinearLayout>
+
 
     <Button
         android:id="@+id/btnnxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/signin_bg"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:text="Next"
         android:textStyle="bold"
         android:textColor="@color/colorWhite"
