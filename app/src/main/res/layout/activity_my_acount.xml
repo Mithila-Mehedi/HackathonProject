@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front_backgnd"
+    android:orientation="vertical"
+    tools:context=".MyAcount">
+
+    <Button
+        android:id="@+id/license"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_steel_blue"
+        android:text="License Account"
+        android:textSize="25sp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/fitness"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_steel_blue"
+        android:text="Fitness Account"
+        android:textSize="25sp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+
+</LinearLayout>
