@@ -34,8 +34,6 @@
             android:padding="5dp"
             android:paddingTop="5dp">
 
-
-
             <Button
                 android:id="@+id/firstBtn"
                 android:layout_width="0dp"
@@ -50,6 +48,7 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@string/firstBtn" />
+
         </LinearLayout>
 
         <LinearLayout
