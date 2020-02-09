@@ -105,7 +105,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     // Sign in success, update UI with the signed-in user's information
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                        startActivity(new Intent(SignUpActivity.this, MainActivity.class));
+                        startActivity(new Intent(SignUpActivity.this, LogInActivity.class));
                         finish();
                         Toast.makeText(getApplicationContext(),"User is already registered!\nplease sign in", Toast.LENGTH_SHORT).show();
                     } else {

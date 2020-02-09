@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         }
         else if (v.getId() == R.id.MyAccountCardViewID) {
-            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+            Intent intent = new Intent(MainActivity.this, MyAcount.class);
             startActivity(intent);
 
         }
