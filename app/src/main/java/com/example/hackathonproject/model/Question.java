@@ -2,10 +2,10 @@ package com.example.hackathonproject.model;
 
 public class Question {
 
-    private String questions,option1,option2,option3,option4,answer;
+    private String question,option1,option2,option3,option4,answer;
 
     public Question(String question, String option1, String option2, String option3, String option4, String answer) {
-        this.questions = question;
+        this.question = question;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
@@ -16,11 +16,11 @@ public class Question {
     public Question(){}
 
     public String getQuestion() {
-        return questions;
+        return question;
     }
 
     public void setQuestion(String question) {
-        this.questions = question;
+        this.question = question;
     }
 
     public String getOption1() {
